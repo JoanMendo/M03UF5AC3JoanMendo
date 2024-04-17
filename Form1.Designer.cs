@@ -163,6 +163,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(908, 275);
             dataGridView1.TabIndex = 4;
+            dataGridView1.CellContentClick += DataGridCellClick;
             // 
             // groupBox2
             // 
@@ -223,6 +224,7 @@
             button1.TabIndex = 6;
             button1.Text = "Netejar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += clearParametersOfText;
             // 
             // button2
             // 
@@ -232,6 +234,7 @@
             button2.TabIndex = 7;
             button2.Text = "Guardar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += SaveResult;
             // 
             // Form1
             // 
