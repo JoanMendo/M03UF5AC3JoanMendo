@@ -10,6 +10,8 @@ namespace WinFormsApp1
             InitializeComponent();
             dataTable = new DataTable();
             showCSVInDataTable();
+            addYearsToComboBox();
+            addComarcasFromCSV();
             
         }
 
@@ -59,6 +61,41 @@ namespace WinFormsApp1
                 comboBox1.Items.Add(i);
             }
         }
+        private void addComarcasFromCSV()
+        {
+            string filePath = "../../../ConsumAigua.csv";
+            List<string> comarcas = new List<string>();
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    using (StreamReader reader = new StreamReader(filePath))
+                    {
+                        reader.ReadLine();
+                        while (!reader.EndOfStream)
+                        {
+                            string[] fields = reader.ReadLine().Split(',');
+                            if (!comarcas.Contains(fields[2]))
+                            {
+                                comarcas.Add(fields[2]);
+                            }
+                        }
+                    }
+                    foreach (string comarca in comarcas)
+                    {
+                        comboBox2.Items.Add(comarca);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("CSV file not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+        }
         private void showCSVInDataTable()
         {
 
@@ -88,6 +125,7 @@ namespace WinFormsApp1
                             }
                             else
                             dataTable.Rows.Add(fields);
+
                         }
                     }
 

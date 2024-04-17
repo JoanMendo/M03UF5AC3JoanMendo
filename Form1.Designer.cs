@@ -32,19 +32,19 @@
             textBox1 = new TextBox();
             label1 = new Label();
             groupBox1 = new GroupBox();
-            comboBox2 = new ComboBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            comboBox2 = new ComboBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
             dataGridView1 = new DataGridView();
             groupBox2 = new GroupBox();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
             label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
             button1 = new Button();
             button2 = new Button();
             groupBox1.SuspendLayout();
@@ -98,45 +98,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Gestió de dades demogràfiques de regions";
             // 
-            // comboBox2
+            // label5
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(294, 83);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(379, 209);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(196, 209);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 6;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(301, 56);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Comarca";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(27, 176);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Població";
+            label5.AutoSize = true;
+            label5.Location = new Point(196, 176);
+            label5.Name = "label5";
+            label5.Size = new Size(89, 15);
+            label5.TabIndex = 10;
+            label5.Text = "Domèstic Xarxa";
             // 
             // label4
             // 
@@ -147,21 +116,52 @@
             label4.Text = "Activitats econòmiques i fonts pròpies";
             label4.Click += label4_Click;
             // 
-            // label5
+            // label3
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(196, 176);
-            label5.Name = "label5";
-            label5.Size = new Size(89, 15);
-            label5.TabIndex = 10;
-            label5.Text = "Domèstic Xarxa";
+            label3.AutoSize = true;
+            label3.Location = new Point(27, 176);
+            label3.Name = "label3";
+            label3.Size = new Size(53, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Població";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(301, 56);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Comarca";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(294, 83);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 4;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(196, 209);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(379, 209);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 5;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 330);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(908, 70);
+            dataGridView1.Size = new Size(908, 275);
             dataGridView1.TabIndex = 4;
             // 
             // groupBox2
@@ -178,14 +178,23 @@
             groupBox2.Text = "Estadìstiques";
             groupBox2.Enter += groupBox2_Enter;
             // 
-            // label6
+            // label9
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(16, 21);
-            label6.Name = "label6";
-            label6.Size = new Size(151, 15);
-            label6.TabIndex = 11;
-            label6.Text = "Població > 20000 Habitants";
+            label9.AutoSize = true;
+            label9.Location = new Point(16, 129);
+            label9.Name = "label9";
+            label9.Size = new Size(206, 15);
+            label9.TabIndex = 14;
+            label9.Text = "Consúm domèstic per capita més alt: ";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(16, 91);
+            label8.Name = "label8";
+            label8.Size = new Size(206, 15);
+            label8.TabIndex = 13;
+            label8.Text = "Consúm domèstic per capita més alt: ";
             // 
             // label7
             // 
@@ -197,23 +206,14 @@
             label7.Text = "Consum Domèstic mitja: ";
             label7.Click += label7_Click;
             // 
-            // label8
+            // label6
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(16, 91);
-            label8.Name = "label8";
-            label8.Size = new Size(206, 15);
-            label8.TabIndex = 13;
-            label8.Text = "Consúm domèstic per capita més alt: ";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(16, 129);
-            label9.Name = "label9";
-            label9.Size = new Size(206, 15);
-            label9.TabIndex = 14;
-            label9.Text = "Consúm domèstic per capita més alt: ";
+            label6.AutoSize = true;
+            label6.Location = new Point(16, 21);
+            label6.Name = "label6";
+            label6.Size = new Size(151, 15);
+            label6.TabIndex = 11;
+            label6.Text = "Població > 20000 Habitants";
             // 
             // button1
             // 
@@ -237,7 +237,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 397);
+            ClientSize = new Size(932, 617);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox2);
